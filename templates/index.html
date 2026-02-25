@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosso Dia ❤️</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Feliz Dia de São Valentim ❤️</h1>
+      <p class="subtitle">Você é a melhor parte da minha vida.</p>
+
+      <div class="gallery">
+        <img
+          src="{{ url_for('static', filename='fotos/f1.jpg') }}"
+          class="photo"
+        />
+        <img
+          src="{{ url_for('static', filename='fotos/f2.jpg') }}"
+          class="photo"
+        />
+
+        <div class="double">
+          <img src="{{ url_for('static', filename='fotos/f3.jpg') }}" />
+          <img src="{{ url_for('static', filename='fotos/f4.jpg') }}" />
+        </div>
+
+        <img
+          src="{{ url_for('static', filename='fotos/f5.jpg') }}"
+          class="photo"
+        />
+        <img
+          src="{{ url_for('static', filename='fotos/f6.jpg') }}"
+          class="photo"
+        />
+        <img
+          src="{{ url_for('static', filename='fotos/f7.jpg') }}"
+          class="photo"
+        />
+        <img
+          src="{{ url_for('static', filename='fotos/f8.jpg') }}"
+          class="photo"
+        />
+        <img
+          src="{{ url_for('static', filename='fotos/f9.jpg') }}"
+          class="photo"
+        />
+        <img
+          src="{{ url_for('static', filename='fotos/f10.jpg') }}"
+          class="photo"
+        />
+      </div>
+
+      <button onclick="mostrarMensagem()">Clique aqui ❤️</button>
+      <p id="mensagemFinal" class="hidden">
+        Eu escolheria você em todas as vidas. Obrigado por existir.
+      </p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
